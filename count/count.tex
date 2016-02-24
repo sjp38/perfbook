@@ -1648,7 +1648,7 @@ Then line~34 releases \co{gblcnt_mutex}, and line~35 returns success.
 
 Lines~38-50 show \co{read_count()}, which returns the aggregate value
 of the counter.
-It acquires \co{gblcnt_mutex} on line~43 and releases it on line 48,
+It acquires \co{gblcnt_mutex} on line~43 and releases it on line~48,
 excluding global operations from \co{add_count()} and \co{sub_count()},
 and, as we will see, also excluding thread creation and exit.
 Line~44 initializes local variable \co{sum} to the value of
